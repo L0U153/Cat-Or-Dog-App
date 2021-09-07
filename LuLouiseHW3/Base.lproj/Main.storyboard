@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Choose" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which one do you like?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVq-Qq-FvF">
+                                <rect key="frame" x="0.0" y="60" width="414" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="BOx-sx-izx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="slQ-jz-m76">
+                                <rect key="frame" x="40" y="121" width="334" height="34"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="xEr-x1-f9t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="doneIsPressed:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="RrQ-ha-dMM"/>
+                                    <action selector="textInputting:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="tt1-4O-GCo"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1S-TP-X47">
+                                <rect key="frame" x="40" y="798" width="334" height="44"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="FX5-cL-eX9"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0R-q3-DIL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhi-rk-Hjt">
+                                <rect key="frame" x="30" y="625" width="354" height="143"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cta-Dc-9up" userLabel="cat">
+                                <rect key="frame" x="70" y="175" width="274" height="239"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cta-Dc-9up" secondAttribute="height" multiplier="180:157" id="ztZ-q3-XbA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" image="cat"/>
+                                <connections>
+                                    <action selector="tappedCat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPD-d5-KeM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvg-Ve-7OJ" userLabel="dog">
+                                <rect key="frame" x="70" y="444" width="274" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zvg-Ve-7OJ" secondAttribute="height" multiplier="220:139" id="AGA-yl-jog"/>
+                                </constraints>
+                                <state key="normal" image="dog"/>
+                                <connections>
+                                    <action selector="tappedDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1j6-3U-Vvl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d1S-TP-X47" secondAttribute="bottom" constant="20" id="5g8-e8-QaR"/>
+                            <constraint firstItem="Cta-Dc-9up" firstAttribute="top" secondItem="slQ-jz-m76" secondAttribute="bottom" constant="20" id="763-7o-QYJ"/>
+                            <constraint firstItem="Cta-Dc-9up" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="8PP-Od-akr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zvg-Ve-7OJ" secondAttribute="trailing" constant="70" id="9FX-A4-enA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cta-Dc-9up" secondAttribute="trailing" constant="70" id="DIB-1Z-fqZ"/>
+                            <constraint firstItem="Zvg-Ve-7OJ" firstAttribute="top" secondItem="Cta-Dc-9up" secondAttribute="bottom" constant="30" id="FfE-g1-SYh"/>
+                            <constraint firstItem="d1S-TP-X47" firstAttribute="top" secondItem="rhi-rk-Hjt" secondAttribute="bottom" constant="30" id="Kxa-N5-GLP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d1S-TP-X47" secondAttribute="trailing" constant="40" id="M3j-bK-YAK"/>
+                            <constraint firstItem="slQ-jz-m76" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="OPg-yP-fGO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="slQ-jz-m76" secondAttribute="trailing" constant="40" id="OxR-aK-bPm"/>
+                            <constraint firstItem="rhi-rk-Hjt" firstAttribute="top" secondItem="Zvg-Ve-7OJ" secondAttribute="bottom" constant="8" id="Rwf-1D-kRy"/>
+                            <constraint firstItem="slQ-jz-m76" firstAttribute="top" secondItem="HVq-Qq-FvF" secondAttribute="bottom" constant="20" id="S7z-WH-wfh"/>
+                            <constraint firstItem="Zvg-Ve-7OJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="SBL-5D-wox"/>
+                            <constraint firstItem="HVq-Qq-FvF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VDx-fE-y9i"/>
+                            <constraint firstItem="d1S-TP-X47" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Y12-Oh-b2m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rhi-rk-Hjt" secondAttribute="trailing" constant="30" id="ZpW-4l-9ai"/>
+                            <constraint firstItem="HVq-Qq-FvF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="igd-wX-mzR"/>
+                            <constraint firstItem="rhi-rk-Hjt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="oQv-a2-7Nm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HVq-Qq-FvF" secondAttribute="trailing" id="tEw-0h-KTz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="catButton" destination="Cta-Dc-9up" id="guJ-Lg-AHW"/>
+                        <outlet property="dogButton" destination="Zvg-Ve-7OJ" id="Uyu-DL-3CV"/>
+                        <outlet property="mainTextLabel" destination="HVq-Qq-FvF" id="bW9-MF-bmk"/>
+                        <outlet property="resetButton" destination="d1S-TP-X47" id="OHu-gn-geW"/>
+                        <outlet property="responseTextLabel" destination="rhi-rk-Hjt" id="EUu-4e-UVQ"/>
+                        <outlet property="userTextField" destination="slQ-jz-m76" id="qQW-xO-s4x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MYe-We-OvU">
+                    <connections>
+                        <action selector="backgroundIsTapped:" destination="BYZ-38-t0r" id="BuF-Qe-sLU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="400" height="365"/>
+        <image name="dog" width="400" height="273.5"/>
+    </resources>
+</document>
